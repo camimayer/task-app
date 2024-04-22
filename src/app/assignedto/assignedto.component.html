@@ -1,0 +1,19 @@
+<div *ngIf="tasks.length > 0">
+    <h2>List of Tasks</h2>
+    <div class="task-list">
+      <div *ngFor="let task of tasks" class="task-item">
+        <div class="task-header">
+          <h3 class="task-title">{{ task.description }}</h3>
+          <span class="task-status">{{ task.done ? 'Completed' : 'Pending' }}</span>
+        </div>
+        <div class="task-details">
+          <p><strong>Assigned To:</strong> {{ task.assignedToName }}</p>
+          <p><strong>Created By:</strong> {{ task.createdByName }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="tasks.length === 0">
+    <p>No tasks found.</p>
+  </div>
+  

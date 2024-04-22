@@ -1,0 +1,32 @@
+.task-list {
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-title {
+    margin: 0;
+  }
+  
+  .task-status {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .task-details {
+    margin-top: 10px;
+    color: #6c757d;
+  }
+  

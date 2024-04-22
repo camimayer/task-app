@@ -1,0 +1,74 @@
+/* styles.css (or your component-specific CSS file) */
+
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set up a flex container for the page layout */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar-nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main content styles */
+  main {
+    flex: 1; /* Allow the main content to grow and fill remaining space */
+    padding: 20px;
+    width: 90%; /* Set the main content width to 90% of the viewport */
+    height: 100%;
+    margin: 0 auto; /* Center the main content horizontally */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+  }
+  
